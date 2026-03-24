@@ -22,8 +22,19 @@
 </p>
 
 <p align="center">
-  <img src="screenshots/04_analysis_plots.png" alt="Workspace & Trajectory Plots" width="100%"/>
-  <em>Interactive Plotly Plots · Reachable Workspace, Velocity Ellipsoid & Trajectory</em>
+  <img src="screenshots/04_analysis_plots.png" alt="Workspace &amp; Trajectory Plots" width="100%"/>
+  <em>Interactive Plotly Plots · Reachable Workspace, Velocity Ellipsoid &amp; Trajectory</em>
+</p>
+
+---
+
+## 🎬 Demo Video
+
+> **3R Spatial Manipulator — Cubic Spline Trajectory Simulation**
+
+<p align="center">
+  <img src="screenshots/3r_spatial_arm_trajectory.webp" alt="3R Spatial Arm Trajectory Animation" width="100%"/>
+  <em>3R Spatial Manipulator moving from start to end pose using cubic spline joint-space interpolation · No trajectory path rendered</em>
 </p>
 
 ---
@@ -129,11 +140,12 @@ RoboKineDynamicsLab/
 │   ├── visualizer.js       # Three.js 3D renderer & scene management
 │   ├── planner.js          # Trajectory planner (linear + cubic spline)
 │   └── ui.js               # UI bindings, sliders, modals, plot updates
-└── screenshots/            # Platform screenshots for documentation
+└── screenshots/            # Platform screenshots & demo recordings
     ├── 01_main_interface.png
     ├── 02_matrices_panel.png
     ├── 03_robot_selection.png
-    └── 04_analysis_plots.png
+    ├── 04_analysis_plots.png
+    └── 3r_spatial_arm_trajectory.webp  # 3R Spatial Arm trajectory demo
 ```
 
 ---

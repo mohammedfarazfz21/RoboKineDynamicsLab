@@ -106,10 +106,11 @@ class RobotVisualizer {
     this.robotGroup = new THREE.Group();
     this.scene.add(this.robotGroup);
 
-    // Trajectory line
+    // Trajectory line (hidden by default — path tracing disabled)
     const trajGeo = new THREE.BufferGeometry();
     const trajMat = new THREE.LineBasicMaterial({ color: this.COLORS.traj, transparent: true, opacity: 0.6 });
     this.trajectoryLine = new THREE.Line(trajGeo, trajMat);
+    this.trajectoryLine.visible = false; // trajectory path disabled
     this.scene.add(this.trajectoryLine);
 
     // IK ghost target

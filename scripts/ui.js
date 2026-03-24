@@ -13,7 +13,7 @@
   let currentPlotTab = 'workspace';
   let diffDriveInterval = null;
   let isSimulationActive = false;
-  let showTrajectory = true;
+  let showTrajectory = false; // trajectory path disabled by default
 
   // ── DOM References ─────────────────────────────────────────────
   const $ = id => document.getElementById(id);
@@ -29,6 +29,10 @@
 
     // Initial update
     _fullUpdate();
+
+    // Uncheck trajectory checkbox to match default state
+    const trajCheck = $('check-show-trajectory');
+    if (trajCheck) trajCheck.checked = false;
 
     // Create planner
     window.rkd_planner = new TrajectoryPlanner(kinematics, () => {
